@@ -1,10 +1,23 @@
 package rocks.zipcode;
 
 
-public class Person implements Comparable<Person> {
+import java.util.Iterator;
+import java.util.function.Consumer;
+
+class Person implements Comparable<Person>{//, Iterable<Person> {
     private String name;
     private int yearOfBirth;
     private Address address;
+
+//    @Override
+//    public Iterator<Person> iterator() {
+//        return null;
+//    }
+//
+//    @Override
+//    public void forEach(Consumer<? super Person> action) {
+//        return;
+//    }
 
     /**
      * Create a person with given name and age.
